@@ -1,0 +1,666 @@
+1)#wapp given number is Armstrong are not
+
+n=int(input("enter a number:"))
+sum=0
+temp=n
+while(temp!=0):
+    digt=temp%10
+    sum=sum+digt**3
+    temp=temp//10
+
+if sum==n:
+    print("given number is armstong:")
+
+else:
+    print("the number is not armstrong")
+
+
+ex
+==
+153= 1*1+5*5+3*3=153
+    
+
+
+
+
+2)# write a program to print reverse number
+n=int(input("enter a number:"))
+sum=0
+while(n!=0):
+    temp=n%10
+    sum=sum*10+temp
+    n=n//10
+
+
+print("enter the number of the reverse string:",sum)
+
+ex:= input=12343
+==  output=34321
+
+
+                                  other way
+                            =================
+
+n=int(input("enter a number:"))
+print(str(n)[::-1])
+
+input=madam
+outpt=madam
+
+
+
+
+3)#write a program to print given number is prime or not
+
+n=int(input("enter a number:"))
+if n>1:
+    for i in range(2,n):
+        if n%i==0:
+            print("the given number is  not prime:")
+            break
+    else:
+        print("the given number is prime")
+
+else:
+    print("the given number is not prime")
+
+
+
+
+
+4)Wapp to print given number of the sum
+
+n=int(input("enter a number:"))
+sum=0
+while(n!=0):
+    temp=n%10
+    sum=sum+temp
+    n=n//10
+
+print("the total sum:",sum)
+
+ex:=input=12345
+      output=15
+
+
+
+
+
+5)wapp to print fibinoces number 
+
+kilo=5   #0+1+1+2+3+5
+nki=0
+num1=0
+numm2=1
+count=0
+while(count<kilo):
+    print(nki)
+    nki=num1+numm2
+    num1=numm2
+    numm2=nki
+    count=count+1
+
+
+
+6)#Python program to swap two number without using third variable
+a=int(input("enter a number:"))
+b=int(input("enter b number:"))
+print("enter before swapping the value a:",a)
+print("enter before swapping the value b:",b)
+a=a-b
+b=a+b
+a=b-a
+print("enter after swapping the value a:",a)
+print("enter after swapping the value b:",b)
+
+output
+=====
+enter a number:654
+enter b number:54
+enter before swapping the value a: 654
+enter before swapping the value b: 54
+enter after swapping the value a: 54
+enter after swapping the value b: 654
+
+
+
+7)#Python program to swap two number wit using third variable
+a=int(input("enter a number:"))
+b=int(input("enter b number:"))
+print("enter before swapping the value a:",a)
+print("enter before swapping the value b:",b)
+temp=b
+b=a
+a=temp
+print("enter after swapping the value a:",a)
+print("enter after swapping the value b:",b)
+
+output
+=====
+enter a number:5644
+enter b number:54
+enter before swapping the value a: 5644
+enter before swapping the value b: 54
+enter after swapping the value a: 54
+enter after swapping the value b: 5644
+
+
+
+
+
+
+
+6)Python program to find greatest of three numbers
+a=int(input("enter a number:"))
+b=int(input("enter a number:"))
+c=int(input("enter a number:"))
+if a>b and b>c:
+    print(a,"the given number is greatest")
+
+elif b>a and b>c:
+    print(b,"the given number is greatest")
+
+elif c>a and c>b:
+    print(c,"the given number is greatest")
+
+
+output:-
+========
+enter a number:23
+enter a number:54
+enter a number:675
+675 the given number is greatest
+
+
+
+
+7)find the elemments of the avg
+
+n=int(input("enter a number:"))
+l=[]
+for i in range(0,n):
+    kk=int(input("enter the how manys want to find the avg:"))
+    l.append(kk)
+    
+    avg=sum(l)/len(l)
+
+print("the total sum of the avg is :",avg)
+
+output
+=====
+enter a number:6
+enter the how manys want to find the avg:89
+enter the how manys want to find the avg:67
+enter the how manys want to find the avg:45
+enter the how manys want to find the avg:654
+enter the how manys want to find the avg:45
+enter the how manys want to find the avg:43
+the total sum of the avg is : 157.16666666666666
+
+
+
+
+8)#wapp to find given number of the factorial
+
+n=int(input("enter a number:"))
+f=1
+for i in range(2,n+1):
+    f=f*i
+
+print("the factorial of the element is ({})={}".format(n,f))
+
+
+output
+=====
+enter a number:7
+the factorial of the element is (7)=5040
+
+
+9)#wapp to given number is even or odd
+n=int(input("enter a number:"))
+if n%2==0:
+    print(n,"the given number is even")
+
+else:
+    print(n,"the given number is odd")
+
+
+output
+====
+enter a number:5
+5 the given number is odd
+
+
+
+
+10)#wapp given number is smallest number
+a=int(input("enter a number:"))
+b=int(input("enter b number:"))
+c=int(input("enter c number:"))
+d=int(input("enter d number:"))
+if a<b and a<c and a<d:
+    print(a,"this is number is smallest")
+
+elif b<a and b<c and b<d:
+    print(b,"this is number is smallest")
+
+elif c<a and c<b and c<d:
+    print(c,"this number is smallest")
+
+elif d<a and d<b and d<c:
+    print(d,"this number is smallest")
+
+output
+=====
+enter a number:564
+enter b number:54
+enter c number:564
+enter d number:4
+4 this number is smallest
+
+
+
+11)#wapp given number is biggest  number
+a=int(input("enter a number:"))
+b=int(input("enter b number:"))
+c=int(input("enter c number:"))
+d=int(input("enter d number:"))
+if a>b and a>c and a>d:
+    print(a,"this is number is biggast")
+
+elif b>a and b>c and b>d:
+    print(b,"this is number is biggast")
+
+elif c>a and c>b and c>d:
+    print(c,"this number is biggest")
+
+elif d>a and d>b and d>c:
+    print(d,"this number is biggest")
+
+
+
+output
+====
+enter a number:3243
+enter b number:43
+enter c number:43
+enter d number:34
+3243 this is number is biggest 
+
+
+11)#wapp to print power of elements
+base=int(input("enter the base element:"))
+endover=int(input("enter the endover:"))
+print(base,"to the power",endover,end=" ")
+print(pow(base,endover))
+
+
+output
+=====
+enter the base element:5
+enter the endover:6
+5 to the power 6 15625
+
+
+                    		Another method
+
+
+pow(4,5)
+1024
+
+
+
+
+
+
+12)#find the squares of the given number
+n=int(input("enter a number:"))
+print("the square of the value is :",n*n)
+
+
+output
+=====
+enter a number:15
+the square of the value is : 225
+
+
+
+
+13)#find the squares of the given number
+n=int(input("enter a number:"))
+print("the cuberoot of the value is :",n**3)
+
+output
+=====
+enter a number:5
+the cuberoot of the value is : 125
+
+13)
+#Python program to calculate the square root of a given number
+import math
+n=int(input("enter a number square root:"))
+if n<0:
+    print("this is not suare root function")
+
+else:
+    print("the sqaure root of the function:",math.sqrt(n))
+
+
+output
+=====
+enter a number square root:49
+the sqaure root of the function: 7.0
+
+
+                           Another method
+                        =================
+
+#Python program to calculate the square root of a given number
+import math
+n=int(input("enter a number square root:"))
+print("the square of the number :",math.sqrt(n))
+
+output
+=====
+enter a number square root:625
+the square of the number : 25.0
+
+
+
+14)write a program to print calculator
+
+
+a=int(input("enter the first numbr:"))
+b=int(input("enter the second number:"))
+op=input("enter the operator:")
+if (op=="+"):
+    print("the sum is :",a+b)
+
+elif(op=="-"):
+    print("the defrrience is:",a-b)
+
+elif(op=="*"):
+    print("the multiplication of :",a*b)
+
+elif(op=="/"):
+    print("the division is :",a/b)
+
+else:
+    print("invalid statment")
+
+
+output
+=====
+enter the first numbr:45
+enter the second number:4
+enter the operator:+
+the sum is : 49
+
+
+15)#write a program to print gcd of the number
+import math
+print("enter the gcd number 34 and 46:")
+print(math.gcd(34,46))
+
+
+output
+=====
+enter the gcd number 34 and 46:
+2
+
+16)#given number is buzz numbr or not
+n=int(input("enter a number:"))
+if n%7==0 or n%10==7:
+    print("given number is buzz number")
+
+else:
+    print("the given number is not buzz number")
+
+
+output
+=====
+enter a number:67
+given number is buzz number
+
+
+17)#WAPP to given number is leaf year or not
+n=int(input("enter a number:"))
+if n%4==0 or n%100==0:
+    print("This year is leaf year")
+
+else:
+    print("this year not leaf year")
+
+
+output
+======
+enter a number:2022
+this year not leaf year
+
+18)
+#wapp to given number is palindrome are not
+k=input("enter a string:")
+if( k==k[::-1]):
+        print("this is palindrome number:")
+
+else:
+    
+    print("this not palindrome number:")
+
+
+output:
+=====
+k=madam
+this is palindrome number
+
+
+
+18)#multipication program
+
+n=int(input("enter a number for multipication:"))
+print("the table of the multipication program:",n)
+for i in range(1,11):
+    print("\n\t{}*{}={}".format(n,i,n*i))
+    
+
+
+output:
+======enter a number for multipication:9
+the table of the multipication program: 9
+
+	9*1=9
+
+	9*2=18
+
+	9*3=27
+
+	9*4=36
+
+	9*5=45
+
+	9*6=54
+
+	9*7=63
+
+	9*8=72
+
+	9*9=81
+
+	9*10=90
+          
+
+
+
+19)#write a program given numbe is prefact number or not
+n=int(input("enter a number:"))
+sum1=0
+for i in range(1,n):
+    if (n%i==0):
+        sum1+=i
+if n==sum1:
+    print("this is prefacet number")
+
+else:
+    print("this is not prefact number")
+    
+output
+=====
+enter a number:6
+this is prefacet number
+
+1+2+3=6
+
+#sum of the divisible number are called prefact number
+
+
+
+what is function
+============
+A part of main program is called function
+
+types of functions
+1.positional arguments
+2.defualt arguments
+3.keyword arguments
+4.variable length arguments
+5.keywoard variable length arguments
+
+
+1.positinoal arguments
+=======================
+#positional arguments
+def studetn(sname,sno,sloc,marks):
+    print("\t{}\t{}\t{}\t{}".format(sname,sno,sloc,marks))
+
+print("\tsname\tsno\tsloc\tmarks")
+studetn("anki",23,"hyd",343)
+studetn("bala",44,"vzg",234)
+studetn("reddy",32,"gnt",32)
+
+
+output
+=======
+	sname	sno	sloc	marks
+	anki	23	hyd	         343
+	bala	44	vzg	         234
+	reddy	32	 gnt	         32
+
+
+
+2.defualt argments
+==================
+
+def defalutarg(sname,sno,loc,con="india",course="python"):
+    print("\t{}\t{}\t{}\t{}\t{}".format(sname,sno,loc,con,course))
+
+
+print("\tsname\tsno\tloc\tcon\tcourse")
+defalutarg("anki",32,"hyd")
+defalutarg("bala",56,"vizag",course="java")
+defalutarg("reddy",34,"ccc","uk")
+
+output
+======
+
+sname	sno	loc	con	course
+	anki	32	hyd	india	python
+	bala	56	vizag	india	java
+	reddy	34	ccc	uk	python
+
+
+3.keywoard length
+===============
+def keywor(a,b,c):
+    print("\t{}\t{}\t{}".format(a,b,c))
+
+print("\ta\tb\c")
+keywor(a=10,b=34,c=56)
+keywor(b=43,c=45,a=66)
+keywor(c=45,b=34,a=23)
+keywor(b=23,a=244,c=32)
+
+
+output
+=======
+a	b	c
+	10	34	56
+	66	43	45
+	23	34	45
+	244	23	32
+
+
+
+keywoard length arguments
+========================
+def keys(a):
+    print(a)
+
+def kilo(a,b):
+    print(a,b)
+
+def mini(a,b,c):
+    print(a,b,c)
+
+def nilo(a,b,c,d):
+    print(a,b,c,d)
+
+
+keys(10)
+kilo(123,45)
+mini(3432,342,321)
+nilo(3,324,34,54)
+
+output
+=======
+10
+123 45
+3432 342 321
+3 324 34 54	
+
+
+
+20)#calculater program in python
+def add(a,b):
+    return a+b
+def sub(a,b):
+    return a-b
+def multi(a,b):
+    return a*b
+def divison(a,b):
+    return a/b
+
+print("enter the operation")
+print("1.add")
+print("2.sub")
+print("3.multi")
+print("4.divison")
+
+a=int(input("enter a number:"))
+b=int(input("enter b number:"))
+ch=int(input("enter for operation(1/2/3/4):"))
+
+if ch==1:
+    print(a+b)
+elif ch==2:
+    print(a-b)
+
+elif ch==3:
+    print(a*b)
+elif ch==4:
+    print(a/b)
+
+else:
+    print("this number is invaid") 
+
+
+output:
+======
+enter the operation
+1.add
+2.sub
+3.multi
+4.divison
+enter a number:12
+enter b number:13
+enter for operation(1/2/3/4):1
+25
